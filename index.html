@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb-Board</title>
+    <link rel="icon" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="p-2 mx-auto ">
+    <section class="mx-auto lg:w-5/6">
+        <nav class="p-2 bg-red-300 rounded-lg">
+            <div class="flex flex-wrap items-center justify-between mx-auto">
+                <!-- Left Section -->
+                <div class="flex items-center">
+                    <img class="w-auto h-8" src="assets/logo.png">
+                    <h2 class="ml-2 text-xl text-white">Dev<span class="font-bold">Board</span></h2>
+                </div>
+
+                <!-- Right Section -->
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center justify-center w-20 h-10 gap-2 bg-white rounded-xl">
+                        <img src="assets/checkbox.png" alt="checkbox" class="w-5">
+                        <h3 class="font-bold" id="nav-count">23</h3>
+                    </div>
+
+                    <button id="theme-toggle" class="p-2 transition bg-gray-300 rounded-full hover:bg-gray-400">
+
+                        <img class="w-8 text-2xl " src="assets/theme-btn.png " alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="flex flex-col gap-4 p-2 pt-3 pb-10 mx-auto mt-2 lg:flex-row rounded-xl lg:w-5/6">
+        <!-- Left Section  -->
+
+        <div class="rounded-md bg-slate-100">
+
+            <div class="flex ">
+                <div
+                    class="flex items-center justify-center w-40 h-20 gap-4 m-2 bg-orange-200 rounded-lg shadow-xl md:gap-2 w-80">
+                    <div class="bg-white rounded-full ">
+                        <img src="assets/checkbox.png" alt=" " class="w-">
+                    </div>
+                    <div>
+                        <h3>Task Assiged</h3>
+                        <p class="font-bold" id="task-count">6</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-20 gap-1 p-1 m-2 bg-blue-400 rounded-lg shadow-xl"
+                    id="discover">
+                    <div class="rounded-full ">
+                        <img src="assets/board.png" alt=" " class="w-14">
+                    </div>
+                    <div>
+                        <h3 class="text-white">Discover Something New Today!</h3>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-40 h-20 gap-1 p-1 m-2 bg-orange-200 rounded-lg shadow-xl w-80"
+                    id="date-content">
+                    <div class="bg-white rounded-full ">
+                        <img src="assets/calender.png" alt=" " class="w-">
+                    </div>
+                    <div>
+                        <h3 id="current-date"></h3>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="p-4 shadow-xl rounded-xl card-1 bg-base-100">
+                    <button class="w-24 h-8 rounded-md shadow-md">Shop Ease</button>
+                    <h2 class="card-title">Fix Mobile Button Issue </h2>
+                    <p class="p-2 rounded-lg shadow">Fix the issue where the mobile button is unresponsive or not displaying correctly.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">28 Feb 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
+                            id="task-btn-1">Completed</button>
+                    </div>
+                </div>
+
+                <div class="p-4 shadow-xl card bg-base-100">
+                    <button class="w-24 h-8 rounded-md shadow-md">Soft Pay</button>
+                    <h2 class="card-title">Add Dark Mode</h2>
+                    <p class="p-2 rounded-lg shadow">Implement dark mode support for improved user experience and accessibility.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">07 March 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
+                            id="task-btn-2">Completed</button>
+                    </div>
+                </div>
+
+                <div class="p-4 shadow-xl card bg-base-100">
+                    <button class="w-24 h-8 rounded-md shadow-md">Meta</button>
+                    <h2 class="card-title">Optimize Home page </h2>
+                    <p class="p-2 rounded-lg shadow">Optimize the home page for better performance, responsiveness, and user experience.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">14 March 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg w- btn-primary task-btn"
+                            id="task-btn-3">Completed</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl card bg-base-100">
+                    <button class="w-40 h-8 rounded-md shadow-md">Programming Hero</button>
+                    <h2 class="card-title">Add new emoji 🤲</h2>
+                    <p class="p-2 rounded-lg shadow">Add new emojis to enhance user interaction and engagement.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">21 March 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
+                            id="task-btn-4">Completed</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl card bg-base-100">
+                    <button class="w-24 h-8 rounded-md shadow-md">Google LLC</button>
+                    <h2 class="card-title">Integrate OpenAI API</h2>
+                    <p class="p-2 rounded-lg shadow">Integrate the OpenAI API to enable AI-powered features and automation.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">28 March 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
+                            id="task-btn-5">Completed</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl card bg-base-100">
+                    <button class="w-24 h-8 rounded-md shadow-md">Polygen Tech</button>
+                    <h2 class="card-title">Improve Job searching</h2>
+                    <p class="p-2 rounded-lg shadow">Enhance job searching with better filters, recommendations, and user experience.</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p>Deadline: <span class="font-bold">04 April 2025</span></p>
+                        <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
+                            id="task-btn-6">Completed</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="w-full p-4 bg-white rounded-md shadow lg:w-1/4">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-3">
+                    <img src="assets/activity.png" alt="Activity" class="w-4">
+                    <p>Activity Log</p>
+                </div>
+                <button class="w-32 h-8 mt-2 text-white bg-green-800 rounded-lg" id="historyClear">Clear
+                    History</button>
+            </div>
+            <div class="w-full my-2 border-t-2 border-gray-500" id="activityLog"></div>
+
+        </div>
+
+
+    </section >
+
+    <script src="js/utilities.js"></script>
+    <script src="js/js1.js"></script>
+    <script src="js/js3.js"></script>
+</body>
+
+</html>

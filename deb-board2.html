@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb-Board</title>
+    <link rel="icon" href="assets/logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="p-2 mx-auto">
+
+    <section class="mx-auto lg:w-5/6">
+        <nav class="bg-red-300 rounded-lg">
+            <div class="flex justify-between px-2 mx-auto sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+
+                    <div class="flex flex-1 sm:items-stretch sm:justify-start">
+                        <div class="flex items-center shrink-0">
+                            <img class="w-auto h-8" src="assets/logo.png">
+                        </div>
+                        <div class=" sm:ml-6 sm:block">
+                            <div class="flex space-x-2 ">
+                                <h2 class="text-xl text-white">Dev<span class="font-bold">Board</span></h2>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex items-center justify-center w-32 h-12 mt-2 bg-green-500 rounded-md " id="btn-click">
+                        <button class="text-xl text-white"> Back to desk</button>
+                    </div>
+                    <div class="pt-2">
+                        <button id="theme-toggle" class="p-2 transition bg-gray-300 rounded-full hover:bg-gray-400">
+
+                            <img class="w-8 text-2xl " src="assets/theme-btn.png " alt="">
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </nav>
+    </section>
+
+    <h2 class="flex items-center justify-center m-3 mx-auto text-2xl font-bold lg:w-5/6">Blogs</h2>
+
+    <section class="mx-auto lg:w-5/6">
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl font-medium collapse-title">Question-1: What are the different ways to select an element
+                in the DOM?</div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl collapse-title ">
+                <p>There are several ways to select elements in the DOM:</p>
+                <h3>1.getElementById() - Selects an element by its ID <br>
+                    const element = document.getElementById("myElement");
+
+                </h3>
+                <br>
+                <h3>
+                    2.getElementsByClassName() - Selects elements by class name. <br>
+                    const elements = document.getElementsByClassName("myClass");
+
+                </h3>
+                <br>
+                <h3>
+                    3.getElementsByTagName() - Selects elements by tag name. <br>
+                    const elements = document.getElementsByTagName("div");
+
+                </h3>
+                <br>
+                <h3>
+                    4. querySelector() - Selects the first matching element using CSS selectors. <br>
+                    const element = document.querySelector(".myClass");
+
+                </h3>
+                <br>
+                <h3>
+                    5.querySelectorAll() - Selects all matching elements using CSS selectors. <br>
+                    const elements = document.querySelectorAll("p");
+
+                </h3>
+            </div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl font-medium collapse-title">Question-2: What is the difference between innerHTML,
+                innerText, and textContent ?
+
+            </div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl collapse-title ">
+                <p>The difference between innerHTML,
+                    innerText, and textContent</p>
+                <h3>1.innerHTML - Gets or sets the HTML content inside an element, including any HTML tags.
+                    <br>
+                    const element = document.getElementById("myElement"); <br>
+                    element.innerHTML = "Hello Kabir";
+
+                </h3>
+                <br>
+                <h3>
+                    2.innerText - Gets or sets the visible text content of an element (it doesn't include hidden
+                    elements). <br>
+                    const element = document.getElementById("myElement"); <br>
+                    console.log(element.innerText);
+
+                </h3>
+                <br>
+                <h3>
+                    3.textContent - Gets or sets the text content of an element, including text inside hidden elements.
+                    <br>
+                    const element = document.getElementById("myElement"); <br>
+                    console.log(element.textContent);
+
+                </h3>
+            </div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl font-medium collapse-title">Question-3: What is event delegation in the DOM?</div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl collapse-title ">
+                <h3>
+                    Event delegation is a technique where you attach a single event listener to a parent element to
+                    handle events for its child elements. <br>
+                    Event delegation is a technique where you attach a single event listener to a parent element instead
+                    of adding one to each child element. This works by leveraging event bubbling, where an event
+                    triggers from the target element and bubbles up to its ancestors.
+
+                </h3>
+            </div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl font-medium collapse-title">Question-4: What is event bubbling in the DOM?</div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl collapse-title ">
+                <h3>Event bubbling is when an event triggered on an element propagates upward through its parent
+                    elements in the DOM. <br>
+                    Event bubbling is a concept in the DOM where an event triggered on an element propagates (bubbles)
+                    up to its parent elements, and then to the root of the document. This means that the event is first
+                    captured and handled by the innermost element, and then the event "bubbles" up to its ancestors,
+                    triggering any event listeners on them as well.
+                </h3>
+            </div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl font-medium collapse-title">Question-5: How do you create, add, and remove elements
+                using JavaScript?</div>
+
+        </div>
+        <div class="mb-3 collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="text-xl collapse-title ">
+                <h3>
+                    1. document.createElement() to create a new element. <br>
+
+                    let newDiv = document.createElement("div"); <br>
+                    newDiv.textContent = "Hello, World!";
+                </h3>
+                <br>
+                <h3>
+                    2. appendChild() to add the newly created element to the DOM.
+
+
+                    <br>
+
+                    document.body.appendChild(newDiv);
+                </h3>
+                <br>
+                <h3>
+                    3. removeChild() to remove an element from the DOM.<br>
+
+                    let elementToRemove = document.getElementById("elementToRemove"); <br>
+                    document.body.removeChild(elementToRemove);
+                </h3>
+                <br>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <script src="js/js2.js"></script>
+    
+</body>
+
+</html>
