@@ -42,38 +42,40 @@
 
         <div class="rounded-md bg-slate-100">
 
-            <div class="flex ">
+            <div class="grid grid-cols-1 gap-4 pt-2 lg:grid-cols-3">
                 <div
-                    class="flex items-center justify-center w-40 h-20 gap-4 m-2 bg-orange-200 rounded-lg shadow-xl md:gap-2 w-80">
-                    <div class="bg-white rounded-full ">
-                        <img src="assets/checkbox.png" alt=" " class="w-">
+                    class="flex items-center justify-center h-24 gap-4 m-2 bg-orange-200 rounded-lg shadow-xl lg:w-60 md:gap-2 lg:ml-28">
+                    <div class="bg-white rounded-full">
+                        <img src="assets/checkbox.png" alt=" " />
                     </div>
                     <div>
-                        <h3>Task Assiged</h3>
+                        <h3>Task Assigned</h3>
                         <p class="font-bold" id="task-count">6</p>
                     </div>
                 </div>
-                <div class="flex items-center justify-center w-full h-20 gap-1 p-1 m-2 bg-blue-400 rounded-lg shadow-xl"
+
+                <!-- Middle Div - Adjust width for large devices -->
+                <div class="flex items-center justify-center w-full h-24 gap-1 p-2 m-2 bg-blue-400 rounded-lg shadow-xl "
                     id="discover">
-                    <div class="rounded-full ">
-                        <img src="assets/board.png" alt=" " class="w-14">
+                    <div class="rounded-full">
+                        <img src="assets/board.png" alt=" " class="w-14" />
                     </div>
                     <div>
                         <h3 class="text-white">Discover Something New Today!</h3>
-
                     </div>
                 </div>
-                <div class="flex items-center justify-center w-40 h-20 gap-1 p-1 m-2 bg-orange-200 rounded-lg shadow-xl w-80"
+
+                <div class="flex items-center justify-center h-24 gap-1 p-1 m-2 bg-orange-200 rounded-lg shadow-xl lg:w-60 "
                     id="date-content">
-                    <div class="bg-white rounded-full ">
-                        <img src="assets/calender.png" alt=" " class="w-">
+                    <div class="bg-white rounded-full">
+                        <img src="assets/calender.png" alt=" " class="w-8" />
                     </div>
                     <div>
                         <h3 id="current-date"></h3>
-
                     </div>
                 </div>
             </div>
+
 
 
             <!-- Cards -->
@@ -81,7 +83,8 @@
                 <div class="p-4 shadow-xl rounded-xl card-1 bg-base-100">
                     <button class="w-24 h-8 rounded-md shadow-md">Shop Ease</button>
                     <h2 class="card-title">Fix Mobile Button Issue </h2>
-                    <p class="p-2 rounded-lg shadow">Fix the issue where the mobile button is unresponsive or not displaying correctly.</p>
+                    <p class="p-2 rounded-lg shadow">Fix the issue where the mobile button is unresponsive or not
+                        displaying correctly.</p>
                     <div class="flex items-center justify-between mt-2">
                         <p>Deadline: <span class="font-bold">28 Feb 2025</span></p>
                         <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
@@ -92,7 +95,8 @@
                 <div class="p-4 shadow-xl card bg-base-100">
                     <button class="w-24 h-8 rounded-md shadow-md">Soft Pay</button>
                     <h2 class="card-title">Add Dark Mode</h2>
-                    <p class="p-2 rounded-lg shadow">Implement dark mode support for improved user experience and accessibility.</p>
+                    <p class="p-2 rounded-lg shadow">Implement dark mode support for improved user experience and
+                        accessibility.</p>
                     <div class="flex items-center justify-between mt-2">
                         <p>Deadline: <span class="font-bold">07 March 2025</span></p>
                         <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
@@ -103,7 +107,8 @@
                 <div class="p-4 shadow-xl card bg-base-100">
                     <button class="w-24 h-8 rounded-md shadow-md">Meta</button>
                     <h2 class="card-title">Optimize Home page </h2>
-                    <p class="p-2 rounded-lg shadow">Optimize the home page for better performance, responsiveness, and user experience.</p>
+                    <p class="p-2 rounded-lg shadow">Optimize the home page for better performance, responsiveness, and
+                        user experience.</p>
                     <div class="flex items-center justify-between mt-2">
                         <p>Deadline: <span class="font-bold">14 March 2025</span></p>
                         <button class="w-24 h-8 text-white bg-blue-700 rounded-lg w- btn-primary task-btn"
@@ -123,7 +128,8 @@
                 <div class="p-4 shadow-xl card bg-base-100">
                     <button class="w-24 h-8 rounded-md shadow-md">Google LLC</button>
                     <h2 class="card-title">Integrate OpenAI API</h2>
-                    <p class="p-2 rounded-lg shadow">Integrate the OpenAI API to enable AI-powered features and automation.</p>
+                    <p class="p-2 rounded-lg shadow">Integrate the OpenAI API to enable AI-powered features and
+                        automation.</p>
                     <div class="flex items-center justify-between mt-2">
                         <p>Deadline: <span class="font-bold">28 March 2025</span></p>
                         <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
@@ -133,7 +139,8 @@
                 <div class="p-4 shadow-xl card bg-base-100">
                     <button class="w-24 h-8 rounded-md shadow-md">Polygen Tech</button>
                     <h2 class="card-title">Improve Job searching</h2>
-                    <p class="p-2 rounded-lg shadow">Enhance job searching with better filters, recommendations, and user experience.</p>
+                    <p class="p-2 rounded-lg shadow">Enhance job searching with better filters, recommendations, and
+                        user experience.</p>
                     <div class="flex items-center justify-between mt-2">
                         <p>Deadline: <span class="font-bold">04 April 2025</span></p>
                         <button class="w-24 h-8 text-white bg-blue-700 rounded-lg btn-primary task-btn"
@@ -159,7 +166,7 @@
         </div>
 
 
-    </section >
+    </section>
 
     <script src="js/utilities.js"></script>
     <script src="js/js1.js"></script>
