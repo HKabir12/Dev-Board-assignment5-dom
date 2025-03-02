@@ -4,8 +4,6 @@ event.preventDefault();
 const navValue=getInnerTextValueByID("nav-count");
 const taskNumber=getInnerTextValueByID("task-count");
 
-
-
 })
 
 const colors = [

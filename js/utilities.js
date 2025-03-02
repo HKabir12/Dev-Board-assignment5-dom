@@ -8,10 +8,14 @@ function setInnerTextByIDValue(id, value) {
   document.getElementById(id).innerText = value;
 }
 
+
+//append
 function appendActivityToSpecificId(id, text) {
   const newText = document.createElement("p");
   const currentTime = new Date().toLocaleTimeString([], { hour12: true });
-  newText.textContent = `${text} at ${currentTime}`;
+  newText.textContent = `
+  ${text} at ${currentTime}`;
+  newText.classList.add("bg-red-400", "p-2", "rounded-lg", "shadow-md",  "mt-2","font-sm");
   
 
   const container = document.getElementById(id);
@@ -22,6 +26,7 @@ function appendActivityToSpecificId(id, text) {
   }
 }
 
+// hirtory clear
 document
   .getElementById("historyClear")
   .addEventListener("click", function (event) {

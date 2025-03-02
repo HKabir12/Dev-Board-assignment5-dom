@@ -21,19 +21,17 @@ function updateDate() {
   dateCurrent.textContent = formattedDate;
 }
 
-// Run function when page loads
+
 document.addEventListener("DOMContentLoaded", updateDate);
 
-// counding
+
 document.querySelectorAll(".task-btn").forEach((button) => {
   button.addEventListener("click", function () {
     alert("Board Update Successfully");
 
-    // Disable clicked button
     this.disabled = true;
     this.classList.add("opacity-50", "cursor-not-allowed");
 
-    // Update counts
     const taskCount = getInnerTextValueByID("task-count");
     const navCount = getInnerTextValueByID("nav-count");
 
@@ -61,31 +59,31 @@ document.getElementById("task-btn-1").addEventListener("click", function () {
   document.getElementById("task-btn-2").addEventListener("click", function () {
     appendActivityToSpecificId(
       "activityLog",
-      "This is a new activity added dynamically! two"
+      "You have completed the task add dark mode  Button"
     );
   });
   document.getElementById("task-btn-3").addEventListener("click", function () {
     appendActivityToSpecificId(
       "activityLog",
-      "You have completed the task Fix Mobile Button issue"
+      "You have completed the task Optimize Home page  Button"
     );
   });
   document.getElementById("task-btn-4").addEventListener("click", function () {
     appendActivityToSpecificId(
       "activityLog",
-      "This is a new activity added dynamically! two"
+      "You have completed the task Add new emoji  Button"
     );
   });
   document.getElementById("task-btn-5").addEventListener("click", function () {
     appendActivityToSpecificId(
       "activityLog",
-      "You have completed the task Fix Mobile Button issue"
+      "You have completed the task Integrate OpenAI API Button "
     );
   });
   document.getElementById("task-btn-6").addEventListener("click", function () {
     appendActivityToSpecificId(
       "activityLog",
-      "This is a new activity added dynamically! two"
+      "You have completed the task improve job searching Button"
     );
   });
   
